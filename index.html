@@ -355,18 +355,19 @@
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="preconnect" href="https://picsum.photos" crossorigin>
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1542601098-8fc114e148e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1518487053331-01a5253f0a34?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1532634896-26909d0d4b6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1542996966-01b6a441d037?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
 </head>
 <body>
 
     <header>
-        <svg class="globe-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="45" fill="none" stroke="#BFAF7A" stroke-width="5"/>
-            <path d="M50 5 A45 45 0 0 1 50 95" fill="none" stroke="#BFAF7A" stroke-width="3"/>
-            <path d="M5 50 A45 45 0 0 1 95 50" fill="none" stroke="#BFAF7A" stroke-width="3"/>
-            <circle cx="50" cy="50" r="5" fill="#BFAF7A"/>
-        </svg>
         <h1>Globus Music Hall</h1>
-        <p style="font-size: 18px; margin-top: 10px; opacity: 0.9;">Где музыка встречается со спортом</p>
+        <p style="font-size: 18px; margin-top: 10px; opacity: 0.9;">Пульс музыки в сердце Надыма</p>
     </header>
 
     <nav>
@@ -380,7 +381,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Живой концерт, крупный план сцены и света">
+                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Живой концерт, крупный план сцены и света" loading="eager" decoding="async" fetchpriority="high" referrerpolicy="no-referrer" data-category="concert">
             </div>
             <h3>🎵 Живые концерты и джемы</h3>
             <p>Энергия сцены, живой звук и световые эффекты. Мы любим музыку и делаем её ближе.</p>
@@ -388,7 +389,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1542601098-8fc114e148e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Игра в бильярд, шар и кии крупным планом">
+                <img src="https://images.unsplash.com/photo-1542601098-8fc114e148e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Игра в бильярд, шар и кии крупным планом" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="billiards">
             </div>
             <h3>🎱 Бильярд</h3>
             <p>Классический стол, точные удары и дружеские матчи. Расслабьтесь и играйте с комфортом.</p>
@@ -396,7 +397,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1518487053331-01a5253f0a34?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Настольный футбол, стремительная игра крупным планом">
+                <img src="https://images.unsplash.com/photo-1518487053331-01a5253f0a34?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Настольный футбол, стремительная игра крупным планом" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="foosball">
             </div>
             <h3>⚽ Настольный футбол</h3>
             <p>Драйв и азарт у стола. Собирайте команды и устройте мини-турнир!</p>
@@ -404,7 +405,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1532634896-26909d0d4b6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Пенные бокалы с пивом, крупный план">
+                <img src="https://images.unsplash.com/photo-1532634896-26909d0d4b6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Пенные бокалы с пивом, крупный план" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="beer">
             </div>
             <h3>🍺 Пиво и барная классика</h3>
             <p>Свежие сорта, классика и крафт. Вкус, который объединяет друзей.</p>
@@ -412,7 +413,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1542996966-01b6a441d037?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Настольные игры, фишки и карты крупным планом">
+                <img src="https://images.unsplash.com/photo-1542996966-01b6a441d037?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Настольные игры, фишки и карты крупным планом" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="boardgames">
             </div>
             <h3>🎲 Настольные игры</h3>
             <p>От быстрых вечеринок до длинных стратегий — выбирайте и проводите время круто.</p>
@@ -439,6 +440,10 @@
             <li>🏆🎯 <strong>Турнир или соревнования</strong> — организуем, судим, награждаем</li>
         </ul>
 
+        <p style="text-align: center; font-size: 16px; color: #BFAF7A; font-weight: 600; margin-top: -10px;">
+            Стоимость уточняется индивидуально у администратора под каждое мероприятие в зависимости от ваших потребностей.
+        </p>
+
         <div style="background: rgba(191,175,122,0.1); padding: 30px; border-radius: 15px; margin: 30px 0; border-left: 5px solid #BFAF7A;">
             <h4 style="color: #BFAF7A; margin-top: 0;">✨ У нас есть всё для вашего события:</h4>
             <p style="margin: 10px 0;">• Профессиональное музыкальное оборудование и микшер</p>
@@ -459,13 +464,16 @@
 
     <section class="fade-in" style="max-width: 900px; text-align: center;">
         <h2 style="margin-bottom: 24px;">Мы рядом с надымчанами и гостями города</h2>
+        <div class="alive-image" style="height: 380px; max-width: 900px; margin: 0 auto 16px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nadym_2017.jpg" alt="Город Надым, Ямало-Ненецкий автономный округ" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="city">
+        </div>
         <p style="font-size: 18px; color: #CCCCCC;">
             Наша команда Globus Music Hall делает всё, чтобы удивлять, вдохновлять и радовать. Мы создаём события, к которым хочется возвращаться: от дружеских встреч до больших концертов. Добро пожаловать в место, где звук, спорт и общение соединяются в одно целое.
         </p>
     </section>
 
     <footer id="contacts">
-        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; text-align: left;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; text-align: center;">
             <div>
                 <h4 style="color: #BFAF7A; margin-bottom: 15px;">📍 Контакты</h4>
                 <p>ул. Заводская 1/5, г. Надым<br>Торговый центр Globus<br><a href="tel:+79175593637" style="color:#fff; text-decoration:none;">+7 (917) 559 36 37</a><br><a href="https://t.me/Globus_Music_Hall_bot" target="_blank" rel="noopener" style="color:#BFAF7A; text-decoration:none;">Telegram-бот для брони</a></p>
@@ -546,6 +554,51 @@
                 box.style.setProperty('--my', y + '%');
             });
         });
+
+        // Гарантированная подгрузка изображений с фолбэками
+        (function ensureImages() {
+            const fallbackByCategory = {
+                concert: [
+                    'https://picsum.photos/seed/concert1/1280/800',
+                    'https://picsum.photos/seed/concert2/1280/800'
+                ],
+                billiards: [
+                    'https://picsum.photos/seed/billiards1/1280/800',
+                    'https://picsum.photos/seed/billiards2/1280/800'
+                ],
+                foosball: [
+                    'https://picsum.photos/seed/foosball1/1280/800',
+                    'https://picsum.photos/seed/foosball2/1280/800'
+                ],
+                beer: [
+                    'https://picsum.photos/seed/beer1/1280/800',
+                    'https://picsum.photos/seed/beer2/1280/800'
+                ],
+                boardgames: [
+                    'https://picsum.photos/seed/boardgames1/1280/800',
+                    'https://picsum.photos/seed/boardgames2/1280/800'
+                ],
+                city: [
+                    'https://picsum.photos/seed/nadym1/1280/800',
+                    'https://picsum.photos/seed/nadym2/1280/800'
+                ]
+            };
+
+            document.querySelectorAll('img[data-category]').forEach(img => {
+                img.dataset.fidx = '0';
+                img.addEventListener('error', function onErr() {
+                    const cat = this.dataset.category;
+                    const idx = parseInt(this.dataset.fidx || '0', 10);
+                    const list = fallbackByCategory[cat] || [];
+                    if (idx < list.length) {
+                        this.dataset.fidx = String(idx + 1);
+                        this.src = list[idx];
+                    } else {
+                        this.removeEventListener('error', onErr);
+                    }
+                });
+            });
+        })();
     </script>
 </body>
 </html>
