@@ -345,6 +345,48 @@
             mix-blend-mode: soft-light;
         }
 
+        /* Стиль для секции с фоном города */
+        .city-section {
+            position: relative;
+            padding: 120px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover fixed;
+            color: #FFFFFF;
+            text-align: center;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .city-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(26,43,72,0.4), rgba(191,175,122,0.2));
+            border-radius: 20px;
+            pointer-events: none;
+        }
+
+        .city-section > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .city-section h2 {
+            font-size: 48px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+            margin-bottom: 40px;
+        }
+
+        .city-section p {
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            color: #F5F5F5;
+        }
+
         /* Responsive design */
         @media (max-width: 768px) {
             h1 { font-size: 40px; }
@@ -352,16 +394,19 @@
             section { padding: 60px 15px; }
             h2 { font-size: 32px; }
             .event-card { padding: 26px; }
+            .city-section { padding: 80px 15px; }
+            .city-section h2 { font-size: 36px; }
+            .city-section p { font-size: 18px; }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link rel="preconnect" href="https://picsum.photos" crossorigin>
     <link rel="preload" as="image" href="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1542601098-8fc114e148e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1518487053331-01a5253f0a34?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1532634896-26909d0d4b6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1542996966-01b6a441d037?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1594736797933-d0dccda5d094?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80">
 </head>
 <body>
 
@@ -389,7 +434,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1542601098-8fc114e148e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Игра в бильярд, шар и кии крупным планом" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="billiards">
+                <img src="https://images.unsplash.com/photo-1594736797933-d0dccda5d094?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Бильярдный стол с кием и шарами" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="billiards">
             </div>
             <h3>🎱 Бильярд</h3>
             <p>Классический стол, точные удары и дружеские матчи. Расслабьтесь и играйте с комфортом.</p>
@@ -397,7 +442,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1518487053331-01a5253f0a34?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Настольный футбол, стремительная игра крупным планом" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="foosball">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Настольный футбол, игроки за столом" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="foosball">
             </div>
             <h3>⚽ Настольный футбол</h3>
             <p>Драйв и азарт у стола. Собирайте команды и устройте мини-турнир!</p>
@@ -405,7 +450,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1532634896-26909d0d4b6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Пенные бокалы с пивом, крупный план" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="beer">
+                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Разливное пиво, бокалы с пеной на барной стойке" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="beer">
             </div>
             <h3>🍺 Пиво и барная классика</h3>
             <p>Свежие сорта, классика и крафт. Вкус, который объединяет друзей.</p>
@@ -413,7 +458,7 @@
 
         <div class="event-card">
             <div class="alive-image">
-                <img src="https://images.unsplash.com/photo-1542996966-01b6a441d037?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Настольные игры, фишки и карты крупным планом" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="boardgames">
+                <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Настольные игры, кубики и карты на столе" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="boardgames">
             </div>
             <h3>🎲 Настольные игры</h3>
             <p>От быстрых вечеринок до длинных стратегий — выбирайте и проводите время круто.</p>
@@ -441,7 +486,7 @@
         </ul>
 
         <p style="text-align: center; font-size: 16px; color: #BFAF7A; font-weight: 600; margin-top: -10px;">
-            Стоимость уточняется индивидуально у администратора под каждое мероприятие в зависимости от ваших потребностей.
+            Стоимость мероприятия можно уточнить у администратора.
         </p>
 
         <div style="background: rgba(191,175,122,0.1); padding: 30px; border-radius: 15px; margin: 30px 0; border-left: 5px solid #BFAF7A;">
@@ -462,13 +507,17 @@
         </p>
     </section>
 
-    <section class="fade-in" style="max-width: 900px; text-align: center;">
-        <h2 style="margin-bottom: 24px;">Мы рядом с надымчанами и гостями города</h2>
-        <div class="alive-image" style="height: 380px; max-width: 900px; margin: 0 auto 16px;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nadym_2017.jpg" alt="Город Надым, Ямало-Ненецкий автономный округ" loading="eager" decoding="async" referrerpolicy="no-referrer" data-category="city">
-        </div>
-        <p style="font-size: 18px; color: #CCCCCC;">
-            Наша команда Globus Music Hall делает всё, чтобы удивлять, вдохновлять и радовать. Мы создаём события, к которым хочется возвращаться: от дружеских встреч до больших концертов. Добро пожаловать в место, где звук, спорт и общение соединяются в одно целое.
+    <section class="fade-in city-section">
+        <h2>Ваше место встречи в сердце Севера</h2>
+        <p>
+            В самом центре Надыма, где северные ветры встречаются с теплом человеческого общения, расположился наш Globus Music Hall. 
+            Мы не просто развлекательное заведение — мы культурный центр, объединяющий людей всех возрастов и интересов. 
+            Здесь рождаются новые знакомства, крепнут старые дружбы, звучит живая музыка и царит атмосфера настоящего праздника.
+            <br><br>
+            Наша команда каждый день работает над тем, чтобы создать для вас пространство, куда хочется возвращаться снова и снова. 
+            Мы знаем, как важно найти своё место в большом городе, особенно здесь, на Севере, где каждая встреча с друзьями ценится особенно высоко. 
+            В Globus Music Hall соединяются традиции гостеприимства с современными возможностями: от живых концертов до спортивных трансляций, 
+            от тихих вечеров с настольными играми до зажигательных вечеринок под любимые хиты.
         </p>
     </section>
 
