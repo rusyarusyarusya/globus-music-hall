@@ -25,14 +25,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare dist
+        run: |
+          set -e
+          rm -rf dist
+          mkdir -p dist
+          cp -v index.html dist/
+          if [ -f .nojekyll ]; then cp -v .nojekyll dist/; else echo > dist/.nojekyll; fi
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
 
       - name: Deploy to GitHub Pages
         id: deployment
